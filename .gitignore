@@ -1,5 +1,5 @@
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +7,44 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+dist-ssr/
+build/
+coverage/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+credentials.env
 *.local
+
+# Firebase credentials and service account keys
+serviceAccountKey.json
+service-account*.json
+firebase-adminsdk-*.json
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.sw?x
+
+# Temporary files
+*.tmp
+*.bak
